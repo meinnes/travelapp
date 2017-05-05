@@ -1,19 +1,22 @@
 package com.travelapp.dao;
 
+import java.sql.DriverManager;
+
 import com.mysql.jdbc.Connection;
+
 
 public class AbstractModelDAO {
 	
-	protected Connection getDBConnection(){
+	protected Connection getDBConnection() throws ClassNotFoundException{
 		loadDriver();
-		Connection conn = (Connection) ConnectionManager.getConnection("mysql", "localhost", 3306, "travelapp", "root", "allmysqldata");
-		return conn;
+		Connection con = (Connection) ConnectionManager.getConnection("mysql", "localhost", 3306, "TRAVELAPP", "root", "allmysqldata");
+		return con;
 	}
-	
+
 	private static void loadDriver(){
-		try{
+		try {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
-		}catch(InstantiationException | IllegalAccessException | ClassNotFoundException e){
+		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException e){
 			e.printStackTrace();
 		}
 	}

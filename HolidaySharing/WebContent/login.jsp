@@ -8,7 +8,7 @@
 </head>
 <body>
  <form action="userLogin" method="post">
- <input type="text" name="username">
+ <input type="text" name="userName">
  <input type="password" name="password">
  <input type="submit" value="login">
  <input type="button" value="cancel">

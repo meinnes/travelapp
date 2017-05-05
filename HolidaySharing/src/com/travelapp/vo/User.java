@@ -1,4 +1,4 @@
-package com.travelapp.main;
+package com.travelapp.vo;
 
 public class User {
 	

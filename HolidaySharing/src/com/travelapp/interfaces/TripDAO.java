@@ -1,9 +1,9 @@
-package com.travelapp.dao;
+package com.travelapp.interfaces;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import com.travelapp.main.Trip;
+import com.travelapp.vo.Trip;
 
 public interface TripDAO {
 	

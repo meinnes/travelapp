@@ -1,10 +1,10 @@
-package com.travelapp.daoImpl;
+package com.travelapp.dao;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import com.travelapp.dao.TripDAO;
-import com.travelapp.main.Trip;
+import com.travelapp.interfaces.TripDAO;
+import com.travelapp.vo.Trip;
 
 public class TripDAOImpl implements TripDAO{
 
